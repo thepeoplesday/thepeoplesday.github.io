@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-  var bgImageArray = ["bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jpg", "bg6.jpg"],
-  base = "images/",
+  var bgImageArray = ["bg1.jpg", "bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jpg", "bg6.jpg"],
+  base = 'images/',
   secs = 4;
   bgImageArray.forEach(function(img){
       new Image().src = base + img;
@@ -9,17 +9,17 @@ $(document).ready(function() {
   });
 
   function backgroundSequence() {
-  	window.clearTimeout();
-  	var k = 0;
-  	for (i = 0; i < bgImageArray.length; i++) {
-  		setTimeout(function(){
-  			document.documentElement.style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
-  			document.documentElement.style.backgroundSize ="cover";
-  		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 2000))} else { k++; }
-    }, (secs * 2000) * i)
-  	}
-  }
-  backgroundSequence();
+	window.clearTimeout();
+	var k = 0;
+	for (i = 0; i < bgImageArray.length; i++) {
+		setTimeout(function(){
+			document.documentElement.style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
+			document.documentElement.style.backgroundSize ="cover";
+		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 2000))} else { k++; }
+		}, (secs * 1000) * i)
+	}
+}
+backgroundSequence();
 
 
 
