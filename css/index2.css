@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Cabin', sans-serif; }
+body {
+  background-color: #fafafa;
+  background-position: center;
+  margin-top: 3%;
+  text-rendering: optimizeLegibility;
+  padding: 3%;
+  text-align: center;
+  background: url("images/") no-repeat center center fixed;
+  background-blend-mode: darken; }
+
+body p {
+  font-size: 48px;
+  font-weight: 200;
+  line-height: 1.52;
+  color: #ffffff;
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
+
+body a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Cabin', sans-serif; }
+
+body a:hover {
+  color: #FF66C1; }
+
+h1 {
+  display: inline-block;
+  font-size: 2.0em;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: 'Cabin', sans-serif;
+  text-align: justify;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em; }
+
+h2 {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0.3em; }
+
+.section {
+  text-align: center; }
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section {
+  background-size: cover; }
+
+/* Defining each section background and styles
+* --------------------------------------- */
+
+/*# sourceMappingURL=index2.css.map */
