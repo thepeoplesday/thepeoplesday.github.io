@@ -1,25 +1,32 @@
 $(document).ready(function() {
 
-  var bgImageArray = ["bg1.jpg", "bg2.jpg", "bg3.jpg", "bg4.jpg", "bg5.jpg", "bg6.jpg"],
-  base = 'images/',
-  secs = 4;
-  bgImageArray.forEach(function(img){
-      new Image().src = base + img;
-      // caches images, avoiding white flash between background replacements
-  });
+  var images = [
+    "images/bg1.jpg",
+    "images/bg2.jpg",
+    "images/bg3.jpg",
+    "images/bg4.jpg",
+    "images/bg5.jpg",
+    "images/bg6.jpg",
+  ];
+  var $body = $("body"),
+      $bg = $("#bg"),
+      n = images.length,
+      c = 0; // Loop Counter
 
-  function backgroundSequence() {
-  	window.clearTimeout();
-  	var k = 0;
-  	for (i = 0; i < bgImageArray.length; i++) {
-  		setTimeout(function(){
-  			document.documentElement.style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center fixed";
-  			document.documentElement.style.backgroundSize ="cover";
-  		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }
-  		}, (secs * 1000) * i)
-  	}
+  // Preload Array of images...
+  for(var i=0; i<n; i++){
+    var tImg = new Image();
+    tImg.src = images[i];
   }
-  backgroundSequence();
+
+  $body.css({backgroundImage : "url("+images[c]+")"});
+
+  (function loopBg(){
+    $bg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(3000).fadeTo(1200, 1, function(){
+      $body.css({backgroundImage : "url("+images[c%n]+")"});
+      loopBg();
+    });
+  }());
 
 
 
