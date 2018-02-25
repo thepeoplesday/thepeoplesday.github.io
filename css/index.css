@@ -10,6 +10,15 @@ body {
   background: url() no-repeat center center fixed;
   background-blend-mode: darken; }
 
+html {
+  margin: 0;
+  background-size: cover;
+  background: url() no-repeat center center fixed;
+  background-blend-mode: darken;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
 body p {
   font-size: 48px;
   font-weight: 200;
