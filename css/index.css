@@ -26,6 +26,7 @@ body, #bg{
   display:block;}
 
   #aboutcontent {
+    padding: 3%;
     vertical-align: middle;
     margin-top:0;
     margin-bottom: 0;
