@@ -12,39 +12,27 @@
 <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-
-<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-
-<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
-<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-<script type="text/javscript" src="js/jquery.slimscroll.min.js"></script>
-<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 </head>
 
 <body>
 
   <div id="bg"></div>
 
+  <div id="navbar">
 
-<div id="fullpage">
-
-    	<div class="section">
-
-<div id="navbar">
-
-          <a id="home" class="show" href="#">home</a>
-          <a id="about" href="#">about</a>
-</div>
+            <a id="home" class="show" href="#home">home</a>
+            <a id="about" href="#about">about</a>
+  </div>
 
         <div class="navContent">
 
         <div id="homecontent" class="show">
 
-          <img src="images/Torchpo.png" height="450px"/>
+          <img src="images/torchpo.png" style="position: absolute; margin: auto; left: 0; right: 0;" height="550px"/>
 
         </div>
 
-        <div id="aboutcontent" class="hide">
+        <div id="aboutcontent" style="position: absolute;" class="hide">
 
 <h1>On Saturday May 12, 2018 in community garden in East Harlem, there will be a free-form gathering  called <i>The People’s Day</i>. On this day artists, activists, neighborhood institutions and East Harlem community members will come together to share stories and visions for the neighborhood as it faces a new challenge; the implementation of a new rezoning plan.
 <br><br><i>The People’s Day</i> is <b>free</b> and open to everyone.<br><br>
@@ -60,10 +48,6 @@ From 12 PM-on, the second Saturday of May<br><br>
         </div>
 
 </div>
-
-      </div>
-
-  </div>
 
   <div id='footer' style='position: absolute; display: none;bottom:0px;'>
     <h1><a target="_blank" href="https://eastharlemlive.tumblr.com/"><i class="icon ion-social-tumblr"></i></a>&nbsp;&nbsp;&nbsp;
