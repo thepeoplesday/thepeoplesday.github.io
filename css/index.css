@@ -17,6 +17,8 @@ body {
 body, #bg{
   background: #000 none 0 50% / cover no-repeat;
   background-position:center;
+  background-attachment: local;
+
 }
 
 .hide{
@@ -36,7 +38,8 @@ body, #bg{
 #footer {
   overflow: hidden;
   position: fixed;
-  padding-bottom: 10px;
+  height: 30px;
+  background-color: rgba(255,109,192,0.7);
   margin: auto;
   left: 0;
   right: 0;
