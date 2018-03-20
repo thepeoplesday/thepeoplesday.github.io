@@ -27,7 +27,7 @@ body, #bg{
  .show{
   display:block;}
 
-  #aboutcontent {
+  #aboutcontent, #contactcontent {
     font-size: 1em;
     padding: 3%;
     vertical-align: middle;

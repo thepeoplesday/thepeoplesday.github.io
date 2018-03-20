@@ -38,8 +38,7 @@ $('#navbar a').click(function(){
     "images/bg3.jpg",
     "images/bg4.jpg",
     "images/bg5.jpg",
-    "images/bg6.jpg",
-    "images/bg7.jpg"
+    "images/bg6.jpg"
   ];
   var $body = $("body"),
       $bg = $("#bg"),
