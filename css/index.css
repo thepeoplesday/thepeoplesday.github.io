@@ -137,12 +137,21 @@ body, #bg{
 
 body a {
   text-decoration: none;
-  color: #ffffff;
+  color: #FF66C1;
   display: inline-block;
   font-family: 'Cabin', sans-serif; }
 
 body a:hover {
   color: #FF66C1; }
+
+  #footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Cabin', sans-serif; }
+
+    #footer a:hover {
+      color: #FF66C1; }
 
 h1 {
   display: inline-block;
