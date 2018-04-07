@@ -52,6 +52,9 @@ $('#navbar a').click(function(){
   }
 
   $body.css({backgroundImage : "url("+images[c]+")"});
+  $body.css({backgroundAttachment : "fixed"});
+  $body.css({backgroundSize : "cover"});
+  $body.css({backgroundRepeat : "repeat"});
 
   (function loopBg(){
     $bg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(3000).fadeTo(1200, 1, function(){

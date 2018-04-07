@@ -14,7 +14,7 @@ body {
   text-align: center;
 }
 
-body, #bg{
+body, #bg {
   background: #000 none 0 50% / cover no-repeat;
   background-position:center;
   background-attachment: local;
@@ -139,7 +139,7 @@ h2 {
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0.3em; }
 
-  p {
+  p, table {
     display: inline-block;
     font-size: 1em;
     font-weight: 400;
@@ -148,6 +148,11 @@ h2 {
     text-align: center;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0.3em; }
+
+    td {
+      border-collapse:collapse;
+  border:1px dashed #ff66c1;
+}
 
 .section {
   text-align: center; }
