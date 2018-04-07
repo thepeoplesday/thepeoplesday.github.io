@@ -139,7 +139,7 @@ h2 {
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0.3em; }
 
-  p, table {
+  p {
     display: inline-block;
     font-size: 1em;
     font-weight: 400;
@@ -149,9 +149,24 @@ h2 {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0.3em; }
 
+    table {
+      display: inline-block;
+      font-size: 1em;
+      font-weight: 400;
+      font-family: 'Cabin', sans-serif;
+      color: #ffffff;
+      text-align: center;
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0.3em; }
+
     td {
+      font-size: 1em;
+      font-weight: 400;
+      font-family: 'Cabin', sans-serif;
+      color: #ffffff;
+      text-align: center;
       border-collapse:collapse;
-  border:1px dashed #ff66c1;
+  border:0px dashed #ff66c1;
 }
 
 .section {
