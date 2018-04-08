@@ -15,9 +15,8 @@ body {
 }
 
 body, #bg {
-  background: #000 none 0 50% / cover no-repeat;
+  background: #000 none 0 / cover no-repeat;
   background-position:center;
-  background-attachment: local;
 
 }
 
