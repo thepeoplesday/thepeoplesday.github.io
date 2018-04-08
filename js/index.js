@@ -16,6 +16,22 @@ $(document).ready(function() {
       $('#footer').css('top',offset);
   }
 
+  $("audio").on("play", function() {
+    var id = $(this).attr('id');
+
+    $("audio").not(this).each(function(index, audio) {
+        audio.pause();
+    });
+});
+
+$("video").on("play", function() {
+    var id = $(this).attr('id');
+
+    $("video").not(this).each(function(index, video) {
+        video.pause();
+    });
+});
+
 
   var $allContentDivs = $('.navContent div') // Hide All Content Divs
 
@@ -54,7 +70,6 @@ $('#navbar a').click(function(){
   $body.css({backgroundImage : "url("+images[c]+")"});
   $body.css({backgroundAttachment : "fixed"});
   $body.css({backgroundSize : "cover"});
-  $body.css({backgroundRepeat : "repeat"});
 
   (function loopBg(){
     $bg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(3000).fadeTo(1200, 1, function(){

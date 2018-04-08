@@ -127,8 +127,8 @@ h1 {
   font-weight: 400;
   color: #ffffff;
   text-align: center;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em; }
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
 
 h2 {
   display: inline-block;
@@ -137,7 +137,7 @@ h2 {
   font-family: 'Cabin', sans-serif;
   color: #ffffff;
   text-align: center;
-  -webkit-margin-before: 0em;
+  -webkit-margin-before: 0;
   -webkit-margin-after: 0.3em; }
 
   p {
@@ -147,7 +147,7 @@ h2 {
     font-family: 'Cabin', sans-serif;
     color: #ffffff;
     text-align: center;
-    -webkit-margin-before: 0em;
+    -webkit-margin-before: 0;
     -webkit-margin-after: 0.3em; }
 
     table {
@@ -157,17 +157,22 @@ h2 {
       font-family: 'Cabin', sans-serif;
       color: #ffffff;
       text-align: center;
-      -webkit-margin-before: 0em;
-      -webkit-margin-after: 0.3em; }
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0.3em;
+      table-layout:fixed;
+}
 
-    td {
-      font-size: 1em;
-      font-weight: 400;
-      font-family: 'Cabin', sans-serif;
-      color: #ffffff;
-      text-align: center;
-      border-collapse:collapse;
-  border:0px dashed #ff66c1;
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Cabin', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    border-collapse:collapse;
+    border:0px dashed #ff66c1;
 }
 
 .section {
@@ -208,4 +213,18 @@ h2 {
     -ms-transform: rotate(135deg);
     -o-transform: rotate(135deg);
           z-index: -99999999999999999;
+}
+
+@media only screen and (max-width: 480px) {
+    /* horizontal scrollbar for tables if mobile screen */
+    .tablemobile {
+        overflow-x: auto;
+        display: block;
+    }
+
+    #navbar a {
+      padding: 14px 10px;
+    }
+
+    iframe { width: 380px ;}
 }
