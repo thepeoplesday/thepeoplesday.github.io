@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'cabin', sans-serif;
+    font-family: "gtown";
+    src: url("fonts/gtown.ttf");
+   }
+
+   html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+
+body, #bg {
+  background: #000 none 0 / cover no-repeat;
+  background-position:center;
+
+}
+
+.hide{
+   display:none;
+}
+ .show{
+  display:block;}
+
+  #aboutcontent, #contactcontent {
+    font-size: 1em;
+    padding: 3%;
+    vertical-align: middle;
+    margin-top:0;
+    margin-bottom: 0;
+  }
+
+#footer {
+   z-index: 99999999999999999;
+  overflow: hidden;
+  position: fixed;
+  height: 30px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.sticky {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  display:block;
+		width: 100%;
+    z-index: 9;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  border-bottom: 0px solid white;
+  color: white;
+}
+
+#navbar a.active {
+  border-bottom: 5px solid white;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#bg {
+  position:fixed;
+  overflow:hidden; /* ADDED! */
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width:100vw;
+  height:100vh;
+}
+
+#gt {
+    font-family: 'gtown', cursive;
+}
+
+body a {
+  text-decoration: none;
+  color: #FF66C1;
+  display: inline-block;
+  font-family: 'Cabin', sans-serif; }
+
+body a:hover {
+  color: #FF66C1; }
+
+  #footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Cabin', sans-serif; }
+
+    #footer a:hover {
+      color: #FF66C1; }
+
+h1 {
+  display: inline-block;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
+
+h2 {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Cabin', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0.3em; }
+
+  p {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Cabin', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0.3em; }
+
+    table {
+      display: inline-block;
+      font-size: 1em;
+      font-weight: 400;
+      font-family: 'Cabin', sans-serif;
+      color: #ffffff;
+      text-align: center;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0.3em;
+      table-layout:fixed;
+}
+
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Cabin', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    border-collapse:collapse;
+    border:0px dashed #ff66c1;
+}
+
+.section {
+  text-align: center; }
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section {
+  background-size: cover; }
+
+/* Defining each section background and styles
+* --------------------------------------- */
+
+/*# sourceMappingURL=index.css.map */
+
+#burst-8 {
+    background: #ff66c1;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+         z-index: -99999999999999999;
+}
+#burst-8:before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background: #ff66c1;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+          z-index: -99999999999999999;
+}
+
+@media only screen and (max-width: 480px) {
+    /* horizontal scrollbar for tables if mobile screen */
+    .tablemobile {
+        overflow-x: auto;
+        display: block;
+    }
+
+    #navbar a {
+      padding: 14px 10px;
+    }
+
+    iframe { width: 380px ;}
+}
