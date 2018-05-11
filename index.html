@@ -24,13 +24,19 @@
       <meta property="og:site_name" content="The People's Day"/>
       <meta property="og:description" content="a free-form celebration in the midst of gentrification."/>
 
-<link href="./main.97292821.css" rel="stylesheet"></head>
+<link href="./main.97292821.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script></head>
+
+<style type="text/css">
+#date::after{background-color:rgba(0,0,0,0); margin-bottom:-0.5em;}
+</style>
 
 <body>
 
 
  <!-- Add your content of header -->
 <header>
+
   <nav class="navbar navbar-inverse navbar-fixed-top">
      <div class="container">
        <div class="navbar-header">
@@ -45,15 +51,12 @@
       <div class="navbar-collapse">
         <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="./index.html#home-section-container" title="" class="anchor-link">Home</a></li>
-          <li><a href="./index.html#about-section-container" title="" class="anchor-link">About</a></li>
-          <li><a href="./index.html#who-section-container" title="" class="anchor-link">Who We Are</a></li>
-          <li><a href="./index.html#schedule-section-container" title="" class="anchor-link">Schedule</a></li>
-          <li><a href="./index.html#contact-section-container" title="" class="anchor-link">Contact Us</a></li>
-
-
+          <li><a href="#home" title="" class="anchor-link">home</a></li>
+          <li><a href="#about" title="" class="anchor-link">about</a></li>
+          <li><a href="#who" title="" class="anchor-link">who we are</a></li>
+          <li><a href="#schedule" title="" class="anchor-link">schedule</a></li>
+          <li><a href="#contact" title="" class="anchor-link">contact us</a></li>
         </ul>
-
       </div>
     </div>
   </nav>
@@ -62,32 +65,29 @@
 
 
 <!-- Add your site or app content here -->
-<div class="background-image-container white-text-container" id="home-section-container"  style="background-image: url('./images/collagec.png')">
-    <div class="overlay"></div>
+<div class="background-image-container white-text-container" id="home">
+<div id="bg"></div>
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-           <h1 style="color:#ff66c1">The People's Day</h1>
-                <p>a free-form celebration in the midst of gentrification!</p>
-            <iframe height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/424424361&color=%23ff66c1&inverse=true&auto_play=false&show_user=true"></iframe>
-              <h2>Saturday, May 12th 2018</h2>
-
-                <br>
-
-                <p>  <a target="_blank" href="https://eastharlemlive.tumblr.com/"><i class="fa fa-tumblr fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+          <p><img src="images/TPD2.png" width="375px"/><br>
+        </p>
+            <h2 id="date">Saturday, May 12th 2018</h2>
+               <p><a target="_blank" href="https://eastharlemlive.tumblr.com/"><i class="fa fa-tumblr fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
                     <a target="_blank" href="https://www.instagram.com/east_harlem_live/"><i class="fa fa-instagram fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
                     <a target="_blank" href="https://www.facebook.com/EastHarlemLive/"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
                     <a target="_blank" href="https://soundcloud.com/east_harlem_radio"><i class="fa fa-soundcloud fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
-                    <a target="_blank" href="https://vimeo.com/user1900687"><i class="fa fa-vimeo fa-2x"></i></a></p><br>
+                    <a target="_blank" href="https://vimeo.com/user1900687"><i class="fa fa-vimeo fa-2x"></i></a></p>
 
-                            <a href="#about-section-container" class="btn btn-primary btn-lg anchor-link" title="">Learn More!</a>
+                    <iframe height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/424424361&color=%23ff66c1&inverse=true&auto_play=false&show_user=true"></iframe><br>
 
+
+</div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="section-container" id="about-section-container">
+<div class="section-container" id="about">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-12 section-container-spacer">
@@ -131,7 +131,7 @@
     </div>
 </div>
 
-<div class="section-container section-half-background-image-container" id="who-section-container">
+<div class="section-container section-half-background-image-container" id="who">
     <div class="image-column" style="background-image: url('./images/collage.png')"></div>
     <div class="container">
         <div class="row">
@@ -158,12 +158,12 @@
 
 
 
-<div class="background-image-container white-text-container"  style="background-image: url('./images/ff66c1.png')" id="schedule-section-container">
+<div class="background-image-container white-text-container"  style="background-image: url('./images/ff66c1.png')" id="schedule">
   <div class="container">
       <div class="row">
           <div class="col-xs-12 col-md-12 section-container-spacer">
               <h2 class="text-center">Schedule</h2>
-              <p>The People’s Day program is designed to commemorate the 11 days that the Young Lord's occupied the People's Church in 1969.</p><p>Rewards will be given out to outstanding members of the community based on categories such as HEALTH, FOOD, DANCE, YOUTH, and EDUCATION.</p><br>
+              <p>The People’s Day program is designed to commemorate the 11 days that the Young Lords occupied the People's Church in 1969.</p><p>Rewards will be given out to outstanding members of the community based on categories such as HEALTH, FOOD, DANCE, YOUTH, and EDUCATION.</p><br>
 
               <img src="/images/Program.jpg" class="img-responsive">
             </div>
@@ -171,7 +171,7 @@
   </div>
 </div>
 
-<footer class="footer-container white-text-container" id="contact-section-container">
+<footer class="footer-container white-text-container" id="contact">
     <div class="container">
         <div class="row">
                 <div class="col-md-4">
@@ -181,7 +181,7 @@
                               <p>+ 646 30 67 030</p>
 
                               <h3>Address</h3>
-                              <p>156 111th Street, NYC</p>
+                              <p>156 E 111th Street</p>
 
 
                           </div>
@@ -213,6 +213,42 @@
 <script>
 document.addEventListener("DOMContentLoaded", function (event) {
   navbarToggleSidebar();
+});
+
+var images = [
+  "images/bg1.jpg",
+  "images/bg2.jpg",
+  "images/bg3.jpg",
+  "images/bg4.jpg",
+  "images/bg5.jpg",
+  "images/bg6.jpg"
+];
+var $body = $("#home"),
+    $bg = $("#bg"),
+    n = images.length,
+    c = 0; // Loop Counter
+
+// Preload Array of images...
+for(var i=0; i<n; i++){
+  var tImg = new Image();
+  tImg.src = images[i];
+}
+
+$body.css({backgroundImage : "url("+images[c]+")"});
+$body.css({backgroundAttachment : "fixed"});
+$body.css({backgroundSize : "cover"});
+$body.css({backgroundPosition : "center"});
+
+(function loopBg(){
+  $bg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(3000).fadeTo(2000, 1, function(){
+    $body.css({backgroundImage : "url("+images[c%n]+")"});
+    loopBg();
+  });
+}());
+
+$('html, body').click(function(e){
+  var $target = $('#div_id');
+  $target.animate({scrollTop: $target.height()}, 500);
 });
 </script>
 
