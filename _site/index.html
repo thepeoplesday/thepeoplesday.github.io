@@ -25,7 +25,8 @@
       <meta property="og:description" content="a free-form celebration in the midst of gentrification."/>
 
 <link href="./main.97292821.css" rel="stylesheet">
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script></head>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/instafeed.min.js"></script></head>
 
 <style type="text/css">
 #date::after{background-color:rgba(0,0,0,0); margin-bottom:-0.5em;}
@@ -174,14 +175,14 @@
 <footer class="footer-container white-text-container" id="contact">
     <div class="container">
         <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-5">
                       <div class="row">
                           <div class="col-xs-12 col-sm-6">
                               <h3>Phone</h3>
                               <p>+ 646 30 67 030</p>
 
                               <h3>Address</h3>
-                              <p>156 E 111th Street</p>
+                              <p>156 E 111th Street, NYC</p>
 
 
                           </div>
@@ -240,14 +241,14 @@ $body.css({backgroundSize : "cover"});
 $body.css({backgroundPosition : "center"});
 
 (function loopBg(){
-  $bg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(3000).fadeTo(2000, 1, function(){
+  $bg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(3000).fadeTo(1200, 1, function(){
     $body.css({backgroundImage : "url("+images[c%n]+")"});
     loopBg();
   });
 }());
 
-$('html, body').click(function(e){
-  var $target = $('#div_id');
+$('#' + this).click(function(e){
+  var $target = $('html,body');
   $target.animate({scrollTop: $target.height()}, 500);
 });
 </script>
