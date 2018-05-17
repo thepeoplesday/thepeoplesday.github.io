@@ -1,0 +1,332 @@
+<!-- Add your content of head and header -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="shortcut icon" href="https://thepeoplesday.org/favicon.ico?v=2">
+
+  <meta name="theme-color" content="#FF66C1"/>
+
+      <title>The People's Day</title>
+
+      <meta property="og:title" content="The People's Day"/>
+      <meta property="og:image" content="/images/banner.png"/>
+      <meta property="og:site_name" content="The People's Day"/>
+      <meta property="og:description" content="a free-form celebration in the midst of gentrification."/>
+
+<link href="./main.97292821.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Add jQuery library -->
+<script type="text/javascript" src="/./fancybox/lib/jquery-1.8.2.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="/./fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="/./fancybox/src/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen" />
+<script type="text/javascript" src="/./fancybox/src/jquery.fancybox.pack.js?v=2.1.3"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="/./fancybox/src/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/./fancybox/src/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="/./fancybox/src/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+
+<link rel="stylesheet" href="/./fancybox/src/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="/./fancybox/src/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<script type="text/javascript">
+var isValidImage = /(jpg|png)$/i;
+$('td a').each(function() {
+    if (isValidImage.test($(this).attr('href'))) {
+        var title = $(this).attr('href').replace(/(.*\/)?(.*)$/, '$2');
+        $(this).addClass('fancylink').attr('rel', 'fancygallery').attr('title', title);
+    }
+});
+
+$('.fancylink').fancybox({
+    prevEffect: 'none',
+    nextEffect: 'none',
+    closeBtn: false,
+    helpers: {
+        title: { type : 'inside' },
+        buttons: {}
+    }
+});
+ $(this).html("<img src='"+ $(this).attr('href') +"' width='200'>" + title);
+</script>
+
+
+<style type="text/css">
+#date::after{background-color:rgba(0,0,0,0); margin-bottom:-0.5em;}
+#home a:hover {color:#ff66c1}
+
+
+</style>
+
+<body>
+
+
+ <!-- Add your content of header -->
+<header>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+       </div>
+
+      <div class="navbar-collapse">
+        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home" title="" class="anchor-link">home</a></li><
+          <li><a href="#about" title="" class="anchor-link">about</a></li>
+          <li><a href="#who" title="" class="anchor-link">who we are</a></li>
+          <li><a href="#schedule" title="" class="anchor-link">schedule</a></li>
+          <li><a href="#contact" title="" class="anchor-link">contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+<!-- Add your site or app content here -->
+<div class="background-image-container white-text-container" id="home">
+<div id="bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+          <p><img src="images/tpd2.png" width="375px"/><br>
+        </p>
+            <h2 id="date">Saturday, May 12th 2018</h2>
+               <p><a target="_blank" href="https://eastharlemlive.tumblr.com/"><i class="fa fa-tumblr fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" href="https://www.instagram.com/east_harlem_live/"><i class="fa fa-instagram fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" href="https://www.facebook.com/EastHarlemLive/"><i class="fa fa-facebook fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" href="https://soundcloud.com/east_harlem_radio"><i class="fa fa-soundcloud fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" href="https://vimeo.com/user1900687"><i class="fa fa-vimeo fa-2x"></i></a></p>
+
+                    <iframe height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/424424361&color=%23ff66c1&inverse=true&auto_play=false&show_user=true"></iframe><br>
+
+
+</div>
+            </div>
+        </div>
+    </div>
+
+<div class="section-container" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 section-container-spacer">
+                <h2 class="text-center">About</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+              <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/267514903" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/267514903">The People&#039;s Day</a> from <a href="https://vimeo.com/user1900687">East Harlem Live</a> on <a href="https://vimeo.com">Vimeo</a>.</p><br>
+
+                <p>On Saturday May 12, 2018 in a <a href="https://maps.google.com/?q=156+E+111+St,+East+Harlem+NYC&entry=gmail&source=g">public garden</a> en East Harlem, we will host a free-form celebration called <i>The People’s Day</i>. On this day, artistas, activistas, neighborhood institutions and East Harlem community members will come together to share stories and recognize each other in the midst of <a href="http://www.eastharlemplan.nyc/">gentrification</a> and the new <a href="http://www1.nyc.gov/site/planning/plans/east-harlem/east-harlem.page">rezoning plan</a> implementation.</p>
+<br>
+            </div>
+
+
+            <div class="col-xs-12 col-md-4">
+                <div class="fa-container">
+                    <i class="fa fa-heart-o fa-3x" aria-hidden="true"></i>
+                      <h3 class="text-center">¡Bienvenidos!</h3>
+                </div>
+                <p>The People’s Day is <b>free</b> and open to everyone!</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="fa-container">
+                    <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-center">Stream Us Live!</h3>
+                <p> You will be able to follow “The People’s Day” live streaming from our <a href="https://www.facebook.com/EastHarlemLive/">Facebook Page</a></p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="fa-container">
+                    <i class="fa fa-smile-o fa-3x" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-center">See you there!</h3>
+                <p>See you at The People’s Day<br>
+                <a href="https://maps.google.com/?q=156+E+111+St,+East+Harlem+NYC&entry=gmail&source=g">Right across the Young Lords Way</a><br>
+                From 9am-9pm, the second Saturday of May</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-container section-half-background-image-container" id="who">
+    <div class="image-column" style="background-image: url('./images/collage.png')"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6 text-column">
+                <h2>Who We Are</h2>
+                <img src="images/111.JPG" alt="" class="img-responsive"><br>
+                <p>The People’s Day is part of an social engagement art project called East Harlem Live co-founded by the 111! Collective and members of the East Harlem Community.</p>
+
+
+                <p>Through, photos, texts, videos, sound clips, and live performances East Harlem Live collects stories and amplifies voices of  members of the East Harlem’s community. Check it out <a href="https://eastharlemlive.tumblr.com/">here.</a></p>
+
+
+                <img style="width: 150px; height: 100px; float: left" src="images/111.png" alt="" class="img-responsive"><p> The 111! Collective is composed of 4 graduate students from the <a href="http://www.pima-brooklyncollege.info/">Performance and Interactive Media Arts</a> program at <a href="http://www.brooklyn.cuny.edu/web/home.php">Brooklyn College</a>; Alonso Gorozpe, David Rios, Miguel Angel Valderrama and Sabine Blaizin.</p>
+
+              <p>  Credits:<br>Shayhan Lewis - Photography & Web Design<br>
+                               Jardines Animados - Graphic Design <br>
+                               Ivette Mercado - Video Production<br>
+                               PIMA Class 2018 -  Creative and Artistic Consulting</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="background-image-container white-text-container"  style="background-image: url('./images/ff66c1.png')" id="schedule">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12 col-md-12 section-container-spacer">
+              <h2 class="text-center">Schedule</h2>
+              <p>The People’s Day program is designed to commemorate the 11 days that the Young Lords occupied the People's Church in 1969.</p><p>Rewards will be given out to outstanding members of the community based on categories such as HEALTH, FOOD, DANCE, YOUTH, and EDUCATION.</p><br>
+
+              <img src="/images/Program.jpg" class="img-responsive">
+            </div>
+      </div>
+  </div>
+</div>
+
+<div class="section-container" id="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12 section-container-spacer">
+                <h2 class="text-center">Gallery</h2>
+
+                <?php
+                   echo "<h1>Hello, PHP!</h1>\n";
+                ?>
+
+              <img src="myimage.php" alt="Image created by a PHP script" width="200" height="80">
+
+            </div>
+        </div>
+        <div class="row">
+
+
+
+
+        </div>
+    </div>
+</div>
+
+<footer class="footer-container white-text-container" id="contact">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-5">
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                              <h3>Phone</h3>
+                              <p>+ 646 30 67 030</p>
+
+                              <h3>Address</h3>
+                              <p>156 E 111th Street, NYC</p>
+
+
+                          </div>
+
+                          <div class="col-xs-12 col-sm-6">
+                            <h3>E-mail</h3>
+                            <a href="mailto:eastharlemlive@gmail.com">eastharlemlive@gmail.com</a>
+
+                    <h3>Follow Us!</h3>
+                  <p>  <a target="_blank" href="https://eastharlemlive.tumblr.com/"><i class="fa fa-tumblr"></i></a>&nbsp;&nbsp;&nbsp;
+                      <a target="_blank" href="https://www.instagram.com/east_harlem_live/"><i class="fa fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+                      <a target="_blank" href="https://www.facebook.com/EastHarlemLive/"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+                      <a target="_blank" href="https://soundcloud.com/east_harlem_radio"><i class="fa fa-soundcloud"></i></a>&nbsp;&nbsp;&nbsp;
+                      <a target="_blank" href="https://vimeo.com/user1900687"><i class="fa fa-vimeo"></i></a></p>
+
+
+                    </div>
+
+                    <div>
+                     <p>&nbsp;&nbsp;&nbsp;&nbsp;<small>website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">mashup template</a></small></p>
+
+                 </div>
+
+                  </div>
+
+                </div>
+
+        </div>
+    </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+  navbarToggleSidebar();
+});
+
+var images = [
+  "images/bg1.jpg",
+  "images/bg2.jpg",
+  "images/bg3.jpg",
+  "images/bg4.jpg",
+  "images/bg5.jpg",
+  "images/bg6.jpg"
+];
+var $body = $("#home"),
+    $bg = $("#bg"),
+    n = images.length,
+    c = 0; // Loop Counter
+
+// Preload Array of images...
+for(var i=0; i<n; i++){
+  var tImg = new Image();
+  tImg.src = images[i];
+}
+
+$body.css({backgroundImage : "url("+images[c]+")"});
+$body.css({backgroundAttachment : "fixed"});
+$body.css({backgroundSize : "cover"});
+$body.css({backgroundPosition : "center"});
+
+(function loopBg(){
+  $bg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(3000).fadeTo(1200, 1, function(){
+    $body.css({backgroundImage : "url("+images[c%n]+")"});
+    loopBg();
+  });
+}());
+
+$('#link').click(function(e){
+  var $target = $('html,body');
+  $target.animate({scrollTop: $target.height()}, 500);
+});
+
+var curimg=0;
+
+function rotateimages(){
+document.getElementById("slideshow").setAttribute("src", galleryarray[curimg]);
+curimg=(curimg<galleryarray.length-1)? curimg+1 : 0;
+}
+
+</script>
+
+
+<script type="text/javascript" src="./main.faaf51f9.js"></script>
