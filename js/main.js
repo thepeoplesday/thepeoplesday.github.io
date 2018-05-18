@@ -24,15 +24,6 @@ if( $('.qt-photo-gallery').length ){
 
 }
 
-var img = $('.qt-photo-gallery');//jQuery id selector
-
-  var width = img.width(); //jQuery width method
-  var height = img.height(); //jQuery height method
-
-  if(width < height){
-     img.attr('id', 'rotate');
-  }
-
 
 /* End: Document Ready */
 
