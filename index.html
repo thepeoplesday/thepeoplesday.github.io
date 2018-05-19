@@ -29,6 +29,9 @@
 <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
 <link href="./css/magnific-popup.css" rel="stylesheet" type="text/css"/>
 <link href="./css/index.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/directorySlider.js"></script>
 
 <style type="text/css">
 #date::after{background-color:rgba(0,0,0,0); margin-bottom:-0.5em;}
@@ -187,10 +190,10 @@
                 <h2 class="text-center">Awards</h2>
 
                 <div class="col-xs-12 col-md-6">
-
+                  <img src="./images/awardees/tamales.jpg" class="img-responsive">
                 </div>
                 <div class="col-xs-12 col-md-6">
-
+                  <img src="./images/awardees/Juan.jpg" class="img-responsive">
                 </div>
                   <div class="col-xs-12 col-md-12">
                           <h3 class="text-center">¡Que Rico! (FOOD)</h3>
@@ -198,41 +201,56 @@
                     </div>
 
 
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-4">
                   <img src="./images/awardees/IMG_8301.JPG" class="img-responsive">
                 </div>
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-4">
                   <img src="./images/awardees/IMG_8357.JPG" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-md-4">
+                  <img src="./images/awardees/IMG_8287.JPG" class="img-responsive">
                 </div>
                   <div class="col-xs-12 col-md-12">
                           <h3 class="text-center">Staying Alive (HEALTH)</h3>
-                            <p class="text-center">Sanduga Dance Studio<br>Dr...</p>
+                            <p class="text-center">Agustin Guzman, Sanduga Dance Studio<br>Dr. Ravichandra<br>Herb Garden Members</p>
                     </div>
 
-                <div class="col-xs-12 col-md-6">
-                  <img src="./images/awardees/IMG_8377.JPG" class="img-responsive">
+
+                  <div class="col-xs-12 col-md-6">
+                        <img src="./images/awardees/jl.png" class="img-responsive">
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <img src="./images/awardees/IMG_8377.JPG" class="img-responsive">
+                  </div>
+                    <div class="col-xs-12 col-md-12">
                           <h3 class="text-center">No Nos Moveran</h3>
-                          <p class="text-center">Joe Encarnacion</p>
+                          <p class="text-center">Juan y Lety (Cafe Ollin)<br>Candido Moran<br>Jose Encarnacion</p>
                     </div>
 
 
                 <div class="col-xs-12 col-md-6">
                   <img src="./images/awardees/elmuseo.jpg" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <img src="./images/awardees/IMG_8388.JPG" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-md-12">
                           <h3 class="text-center">Knowledge is Power (EDUCATION)</h3>
-                            <p class="text-center">El Museo Del Barrio</p>
-                    </div>
+                            <p class="text-center">El Museo del Barrio Education Department<br> Escuela de Mariachi Angeles de NY</p>
+                          </div>
+
 
                     <div class="col-xs-12 col-md-6">
                         <img src="./images/awardees/IMG_8346.JPG" class="img-responsive">
                               <h3 class="text-center">Lifetime Achievement</h3>
-                                <p class="text-center">Carlos "Carlitos" Banks</p>
+                                <p class="text-center">Carlos "Carlitos" Banks<br>Familia Perez Gonzaga</p>
                         </div>
 
 
                 <div class="col-xs-12 col-md-6">
-                  <img src="./images/awardees/IMG_8388.JPG" class="img-responsive">
+                  <img src="./images/awardees/IMG_8395.JPG" class="img-responsive">
                           <h3 class="text-center">Young Leaders (YOUTH)</h3>
-                          <p class="text-center">Escuela de Mariachi Angeles de NY</p>
+                          <p class="text-center">Princess Nokia<br>Amy León<br>17 Racks</p>
                     </div>
 
 
@@ -248,9 +266,17 @@
                         </div>
 
 
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-md-12">
+                  <img src="./images/awardees/alex.JPG" class="img-responsive">
                           <h3 class="text-center">Last Night a DJ Saved My Life</h3>
+                          <p class="text-center">DJ Gold<br>DJ Caluda<br>DJ Alex Museam</p>
                     </div>
+
+                    <div class="col-xs-12 col-md-12">
+                      <img src="./images/awardees/IMG_8637.JPG" class="img-responsive">
+                              <h3 class="text-center">111! Collective</h3>
+                              <p class="text-center">Alo, Miguel, Sabine, David</p>
+                        </div>
 
               </div></div></div></div>
 
@@ -258,77 +284,11 @@
       <div class="section-container" id="gallery">
         <div class="container">
             <div class="row">
+              <h2 class="text-center">Gallery</h2>
 
+<div class="directorySlider"></div>
 
-
-                <h2 class="text-center">Gallery</h2>
-
-                <section class="qt-photo-gallery">
-
-
-                  <?php
-
-            /* ========================================================================== */
-
-                  $qt_folder_name = './images/gallery/'; // change this to a folder of your choice for images
-                  $qt_handle = opendir( dirname( realpath( __FILE__ ) ) . '/' . $qt_folder_name . '/' );
-
-            /* ========================================================================== */
-
-                  $qt_counter = 0;
-
-                  while( $qt_file = readdir( $qt_handle ) ) :
-
-                    if( $qt_file !== '.' && $qt_file !== '..' ) :
-
-                      $qt_counter++;
-
-                      $qt_file_path = $qt_folder_name . '/' . $qt_file;
-
-                      ?>
-
-            <!-- ======================================================================= -->
-
-                      <div class="qt-photo-gallery-item qt-image-no-<?php echo $qt_counter; ?>">
-                        <a class="qt-photo-gallery-item-link" href="<?php echo $qt_file_path; ?>">
-
-                          <div class="qt-photo-gallery-item-image-wrapper">
-
-                            <img src="<?php echo $qt_file_path; ?>" class="qt-photo-gallery-item-image" />
-
-                          </div>
-
-                        </a>
-                      </div>
-
-            <!-- ======================================================================= -->
-
-                      <?php
-
-                      if( $qt_counter == 5 ) {
-                        $qt_counter = 0;
-                      }
-
-                    endif;
-
-                  endwhile;
-
-            /* ========================================================================== */
-
-                  ?>
-
-                </section>
-
-            </div>
-        </div>
-        <div class="row">
-
-
-
-
-        </div>
-    </div>
-</div>
+</div></div></div>
 
 <footer class="footer-container white-text-container" id="contact">
     <div class="container">
@@ -413,22 +373,138 @@ $('#link').click(function(e){
   $target.animate({scrollTop: $target.height()}, 500);
 });
 
-var curimg=0;
+var dir = "images/gallery/";
+var fileextension = ".png"; ".jpg";
+$.ajax({
+    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+    url: dir,
+    success: function (data) {
+        //List all .png file names in the page
+        $(data).find("a:contains(" + fileextension + ")").each(function () {
+            var filename = this.href.replace(window.location, "").replace("http://", "");
+            $("#gallery").append("<img src='" + dir + filename + "'>");
+        });
+    }
+});
 
-function rotateimages(){
-document.getElementById("slideshow").setAttribute("src", galleryarray[curimg]);
-curimg=(curimg<galleryarray.length-1)? curimg+1 : 0;
-}
+/**
+ * directorySlider v0.9 - Loads all images in a specified directory and creates a slide show
+ * Author: Justin W. Hall
+ * http://www.justinwhall.com/directory-jquery-slider/
+ *
+ * License: GPL v3
+ */
+
+(function($){
+   var directorySlider = function(element, options)
+   {
+       var elem = $(element),
+           obj = this,
+           elemId = elem[0].id;
+
+       // Merge config settings
+       var config = $.extend({
+           animation: 'slide',
+           filebase: 'slide_',
+           extension: 'jpg', 'png',
+           speed: 1000,
+           timeout: 4000,
+           directory: '/images/gallery',
+           numslides: null,
+           height: null,
+           width: null
+       }, options || {});
+
+       // set slideshow dimensions if set
+       if (config.height) {
+        $(elem).css('height', config.height);
+       }
+       if (config.width) {
+        $(elem).css('width', config.width);
+       }
+
+       $(elem).css('overflow', 'hidden');
+
+       // Get slides
+       var slides = [],
+       slideNumber = 1;
+
+       while(slideNumber <= config.numslides){
+         slides.push('<img src="' + config.directory + config.filebase + slideNumber + '.' + config.extension + '" />');
+         slideNumber++;
+       }
+
+       // append slideshow
+       // apply slide wrap 1st
+       var slideWrap = $('<div class="' + elemId + '-slide-wrap" ></div>');
+           slideWrap.appendTo(elem);
+
+        // append slide and position absolutley
+       $.each(slides, function(index, val) {
+         $(val).css({
+           position: 'absolute',
+           top: 0,
+           left: 0,
+           width: config.width // ADDED THIS SO WE DON'T NEED TO HAVE ALL IMAGES WITH SAME HEIGHT & WIDTH
+         }).appendTo(slideWrap);
+       });
+
+    setInterval(function(){
+       var firstSlide = elem.find('img:first-child'),
+           lastSlide = elem.find('img:last-child');
+       // Apply animation
+       switch(config.animation){
+
+        case 'fade':
+            $(lastSlide).animate({
+              opacity: 0},
+              config.speed, function() {
+              $(this).insertBefore(firstSlide).css('opacity', 1);
+            });
+        break;
+
+        case 'uncover':
+            lastSlide.animate({
+              marginLeft: -$(this).width()},
+              config.speed, function() {
+              $(this).insertBefore(firstSlide).css('marginLeft', 0);
+            });
+            break;
+        default:
+            $(lastSlide).animate({
+              opacity: 0},
+              config.speed, function() {
+              $(this).insertBefore(firstSlide).css('opacity', 1);
+            });
+       }
+    }, config.timeout);
+
+   };
+
+   $.fn.directorySlider = function(options)
+   {
+       return this.each(function()
+       {
+           var element = $(this);
+
+           // Return early if this element already has a plugin instance
+           if (element.data('directoryslider')) return;
+
+           // pass options to plugin constructor
+           var directoryslider = new directorySlider(this, options);
+
+           // Store plugin object in this element's data
+           element.data('directoryslider', directoryslider);
+
+       });
+   };
+})(jQuery);
 
 
-var img = $('.qt-photo-gallery');//jQuery id selector
 
-  var width = img.width(); //jQuery width method
-  var height = img.height(); //jQuery height method
+  $('.directorySlider').directorySlider();
 
-  if(width < height){
-     img.attr('id', 'rotate');
-  }
+
 
 </script>
 
