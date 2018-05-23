@@ -17,10 +17,10 @@
        var config = $.extend({
            animation: 'slide',
            filebase: 'slide_',
-           extension: 'JPG',
+           extension: 'jpg',
            speed: 1000,
            timeout: 4000,
-           directory: '/images/gallery/',
+           directory: null,
            numslides: null,
            height: null,
            width: null

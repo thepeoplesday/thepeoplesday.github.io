@@ -4,6 +4,7 @@
     font-family: "gtown";
     src: url("./fonts/Gtown.ttf");
    }
+  #subscribe { font-size: large; width: 100%; height: 75px }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
